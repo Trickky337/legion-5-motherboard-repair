@@ -74,19 +74,19 @@ My workflow:
 
 The boardview showing the net `+3VALW_R` and its connections to the EC:
 
-<p align="center"><img src="images/boardview-ec-ue1.webp" alt="Boardview of EC UE1 showing the +3VALW_R net" width="450"><br><em>Boardview of EC UE1 showing the +3VALW_R net</em></p>
+<p align="center"><img src="images/Boardview_EC_chip.webp" alt="Boardview of EC UE1 showing the +3VALW_R net" width="450"><br><em>Boardview of EC UE1 showing the +3VALW_R net</em></p>
 ### The EC chip on my actual board
 
-<p align="center"><img src="images/ec-ue1-on-board.webp" alt="EC chip IT8227E-192CX (UE1) on the board" width="450"><br><em>EC chip IT8227E-192CX (UE1) on the board</em></p>
+<p align="center"><img src="images/EC_chip.webp" alt="EC chip IT8227E-192CX (UE1) on the board" width="450"><br><em>EC chip IT8227E-192CX (UE1) on the board</em></p>
 ### Full board and boardview layout
 
-<p align="center"><img src="images/full-board.webp" alt="Full NM-D711 motherboard" width="450"><br><em>Full NM-D711 motherboard</em></p>
-<p align="center"><img src="images/boardview-layout.webp" alt="Boardview layout of the sibling NM-D712 board" width="450"><br><em>Boardview layout of the sibling NM-D712 board</em></p>
+<p align="center"><img src="images/motherboard.webp" alt="Full NM-D711 motherboard" width="450"><br><em>Full NM-D711 motherboard</em></p>
+<p align="center"><img src="images/Boardview.webp" alt="Boardview layout of the sibling NM-D712 board" width="450"><br><em>Boardview layout of the sibling NM-D712 board</em></p>
 ## Finding the BIOS chip
 
 I located the BIOS flash chip **UB3 (GigaDevice GD25B127D, 16 MB)** next to the CPU/PCH area. There is also a second flash chip, **UB1 (W25R64JV, 8 MB, with RPMC)**, which I deliberately left alone.
 
-<p align="center"><img src="images/bios-chip-ub3.webp" alt="BIOS flash chip GD25B127D (UB3) and the PCH" width="450"><br><em>BIOS flash chip GD25B127D (UB3) and the PCH</em></p>
+<p align="center"><img src="images/bios_flash_chip.webp" alt="BIOS flash chip GD25B127D (UB3) and the PCH" width="450"><br><em>BIOS flash chip GD25B127D (UB3) and the PCH</em></p>
 ## The plan: re-program the BIOS chip
 
 I bought a cheap **CH341A USB programmer (about $10)** with a SOIC8 clip.
@@ -95,7 +95,7 @@ I bought a cheap **CH341A USB programmer (about $10)** with a SOIC8 clip.
 
 My programmer's **default logic level is 5 V**, but the GD25B127D is a **3.3 V part**. Clipping a 5 V programmer on it risks killing the chip (and possibly the board). I measured 5 V on the clip's pin 1 to confirm.
 
-<p align="center"><img src="images/ch341a-programmer.webp" alt="CH341A programmer" width="450"><br><em>CH341A programmer</em></p>
+<p align="center"><img src="images/programmer.webp" alt="CH341A programmer" width="450"><br><em>CH341A programmer</em></p>
 ### The fix: a 3.3 V mod
 
 The CH341A's main chip has two pins that matter here:
