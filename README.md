@@ -165,7 +165,7 @@ Multimeter troubleshooting, power-up sequence analysis, boardview reading, fine-
 | Multimeter | already owned |
 | Soldering iron kit | ~$20 |
 | CH341A programmer + SOIC8 clip | ~$10 |
-| New CMOS battery | a few dollars |
+| New CMOS battery | ~$3 |
 | NexusBV web viewer (boardview) | free |
 
 ## Disclaimer
