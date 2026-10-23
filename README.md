@@ -1,9 +1,6 @@
 # Reviving a Dead Lenovo Legion 5 15ITH6H with a $10 Programmer
 
-![Status](https://img.shields.io/badge/status-fixed-brightgreen)
-![Cost](https://img.shields.io/badge/total%20cost-%2410-blue)
-![Tools](https://img.shields.io/badge/tools-multimeter%20%2B%20soldering%20iron-orange)
-
+<p align="center"><img src="https://img.shields.io/badge/status-fixed-brightgreen" alt="Status" width="450"><br><em>Status</em></p><p align="center"><img src="https://img.shields.io/badge/total%20cost-%2410-blue" alt="Cost" width="450"><br><em>Cost</em></p><p align="center"><img src="https://img.shields.io/badge/tools-multimeter%20%2B%20soldering%20iron-orange" alt="Tools" width="450"><br><em>Tools</em></p>
 **Board:** Lenovo NM-D711 Rev 2.0 (Intel Tiger Lake-H, NVIDIA RTX GPU)
 **Embedded controller (EC):** ITE IT8227E-192CX (UE1)
 **BIOS flash:** GigaDevice GD25B127D, 16 MB, 3.3 V (UB3)
@@ -77,24 +74,19 @@ My workflow:
 
 The boardview showing the net `+3VALW_R` and its connections to the EC:
 
-![Boardview of EC UE1 showing the +3VALW_R net](images/boardview-ec-ue1.webp)
-
+<p align="center"><img src="images/boardview-ec-ue1.webp" alt="Boardview of EC UE1 showing the +3VALW_R net" width="450"><br><em>Boardview of EC UE1 showing the +3VALW_R net</em></p>
 ### The EC chip on my actual board
 
-![EC chip IT8227E-192CX (UE1) on the board](images/ec-ue1-on-board.webp)
-
+<p align="center"><img src="images/ec-ue1-on-board.webp" alt="EC chip IT8227E-192CX (UE1) on the board" width="450"><br><em>EC chip IT8227E-192CX (UE1) on the board</em></p>
 ### Full board and boardview layout
 
-![Full NM-D711 motherboard](images/full-board.webp)
-
-![Boardview layout of the sibling NM-D712 board](images/boardview-layout.webp)
-
+<p align="center"><img src="images/full-board.webp" alt="Full NM-D711 motherboard" width="450"><br><em>Full NM-D711 motherboard</em></p>
+<p align="center"><img src="images/boardview-layout.webp" alt="Boardview layout of the sibling NM-D712 board" width="450"><br><em>Boardview layout of the sibling NM-D712 board</em></p>
 ## Finding the BIOS chip
 
 I located the BIOS flash chip **UB3 (GigaDevice GD25B127D, 16 MB)** next to the CPU/PCH area. There is also a second flash chip, **UB1 (W25R64JV, 8 MB, with RPMC)**, which I deliberately left alone.
 
-![BIOS flash chip GD25B127D (UB3) and the PCH](images/bios-chip-ub3.webp)
-
+<p align="center"><img src="images/bios-chip-ub3.webp" alt="BIOS flash chip GD25B127D (UB3) and the PCH" width="450"><br><em>BIOS flash chip GD25B127D (UB3) and the PCH</em></p>
 ## The plan: re-program the BIOS chip
 
 I bought a cheap **CH341A USB programmer (about $10)** with a SOIC8 clip.
@@ -103,8 +95,7 @@ I bought a cheap **CH341A USB programmer (about $10)** with a SOIC8 clip.
 
 My programmer's **default logic level is 5 V**, but the GD25B127D is a **3.3 V part**. Clipping a 5 V programmer on it risks killing the chip (and possibly the board). I measured 5 V on the clip's pin 1 to confirm.
 
-![CH341A programmer](images/ch341a-programmer.webp)
-
+<p align="center"><img src="images/ch341a-programmer.webp" alt="CH341A programmer" width="450"><br><em>CH341A programmer</em></p>
 ### The fix: a 3.3 V mod
 
 The CH341A's main chip has two pins that matter here:
