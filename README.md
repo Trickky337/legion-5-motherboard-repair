@@ -1,6 +1,6 @@
 # Reviving a Dead Lenovo Legion 5 15ITH6H with a $10 Programmer
 
-<p align="center"><img src="https://img.shields.io/badge/status-fixed-brightgreen" alt="Status" width="450"><br><em>Status</em></p><p align="center"><img src="https://img.shields.io/badge/total%20cost-%2410-blue" alt="Cost" width="450"><br><em>Cost</em></p><p align="center"><img src="https://img.shields.io/badge/tools-multimeter%20%2B%20soldering%20iron-orange" alt="Tools" width="450"><br><em>Tools</em></p>
+![Status](https://img.shields.io/badge/status-fixed-brightgreen) ![Cost](https://img.shields.io/badge/total%20cost-%2410-blue) ![Tools](https://img.shields.io/badge/tools-multimeter%20%2B%20soldering%20iron-orange)
 **Board:** Lenovo NM-D711 Rev 2.0 (Intel Tiger Lake-H, NVIDIA RTX GPU)
 **Embedded controller (EC):** ITE IT8227E-192CX (UE1)
 **BIOS flash:** GigaDevice GD25B127D, 16 MB, 3.3 V (UB3)
